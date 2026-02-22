@@ -6,8 +6,20 @@ public class Mahasiswa06 {
     String nim;
     String kelas;
     double ipk;
-
     // End Of Attribute
+
+    public Mahasiswa06() {
+
+    }
+
+    // Konstruktor
+    public Mahasiswa06(String nm, String nim, double ipk, String kls) {
+        nama = nm;
+        this.nim = nim;
+        this.ipk = ipk;
+        kelas = kls;
+    }
+    // End of Konstruktor
 
     // function
     void tampilkanInformasi() {
