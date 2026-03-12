@@ -9,7 +9,11 @@
 
 # Percobaan 1: Screenshot hasil percobaan
 
+Class faktorial
 ![Screenshot](img/Percobaan1_Class.png)
+
+Main faktorial
+![Screenshot](img/Percobaan1_Main.png)
 
 ## Pertanyaan
 
