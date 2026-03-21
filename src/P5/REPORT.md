@@ -106,4 +106,20 @@ Untuk menjumlah total keselurahan dari elemen array sebelah kanan (rsum) dan kir
             return arr[l];
         }`
 
-yaitu ketika elemen array sebelah kiri(lsum) sama dengan sebelah kanan (rsum)
+yaitu ketika elemen array indeks sebelah kiri(lsum) dan indeks sebelah kanan (rsum) berada dalam posisi yang sama persis.
+
+### 5. Tarik Kesimpulan tentang cara kerja totalDC()
+
+Pertama adalah program mengecek apakah array sudah tidak bisa dibagi lagi (base case). Kedua, adalah fase pembagian Jika array masih berisi lebih dari 1 elemen, program akan mencari indeks tengahnya dengan rumus mid = (l + r) / 2 dan titik mid digunakan untuk membelah array menjadi 2. Ketiga, merupakan fase program memanggil dirinya sendiri secara terus menerus untuk memecah dan menghitung array dibagian kiri dan array bagian kanan. Keempat, adalah fase penggambungan (combine) yaitu ketika base case sudah tercapai kode akan langsung menjumlahkan rsum dan lsum.
+
+# Tugas: Screenshot hasil percobaan
+
+Class
+![Screenshot](img/Tugas_Class_1.png)
+![Screenshot](img/Tugas_Class_2.png)
+
+Main
+![Screenshot](img/Tugas_Main.png)
+
+Hasil
+![Screenshot](img/Tugas_Hasil.png)
