@@ -65,4 +65,45 @@ Jika pangkat genap: return (pangkatDC(a, n / 2) \* pangkatDC(a, n / 2));
 
 ### 3. Pada method pangkatBF()terdapat parameter untuk melewatkan nilai yang akan dipangkatkan dan pangkat berapa, padahal di sisi lain di class Pangkat telah ada atribut nilai dan pangkat, apakah menurut Anda method tersebut tetap relevan untuk memiliki parameter? Apakah bisa jika method tersebut dibuat dengan tanpa parameter? Jika bisa, seperti apa method pangkatBF() yang tanpa parameter?
 
-Karena atribut nilai dan pangkat sudah ada didalam class dan diisi melalui parameter pada method `pangkatBF(int a, int n)`
+Karena atribut nilai dan pangkat sudah ada didalam class dan diisi melalui parameter pada method `pangkatBF(int a, int n)` malah membuat nya menjadi redundan. Jika ingin dibuat tanpa parameter maka akan menjadi sangat bisa. Karena, method akan langsung mengambil nilai dari atribut class tersebut.
+
+![Screenshot](img/Percobaan2_Pertanyaan3.png)
+
+### 4. Tarik tentang cara kerja method pangkatBF() dan pangkatDC()!
+
+Cara kerja `pangkatBF():` Mengalikan bilangan dengan cara satu per satu dari awal hingga akhir. Cara ini mudah dipahami tetapi memakan waktu dan resource yang lebih lama jika nilai pangkatnya sangat besar (kompleksitas waktu linier).
+
+Cara kerja `pangkatDC():` Memecah pangkat menjadi setengahnya untuk mengurangi jumlah operasi perkalian yang perlu dilakukan, lalu menggabungkan hasilnya. Cara ini jauh lebih bagus dan efisien untuk terutama untuk menghitung pangkat dengan angka yang sangat besar.
+
+# Percobaan 3: Screenshot hasil percobaan
+
+Class Pangkat
+![Screenshot](img/Percobaan3_Class.png)
+
+Main Pangkat
+![Screenshot](img/Percobaan3_Main.png)
+
+Hasil
+![Screenshot](img/Percobaan3_Hasil.png)
+
+### 1. Kenapa dibutuhkan variable mid pada method TotalDC()?
+
+mid berfungsi untuk mencari indeks atau posisi tengah antara lsum (left sum) dan rsum (right sum). Setelah ditemukan program bisa menggunakannya sebagai ambang batas untuk memecah masalah menjadi dua bagian kecil yang nantinya akan dihitung secara bersamaan. Mid juga membatasi rentang data yang akan dihitung agar semakin mengecil pada setiap pemanggilan method.
+
+### 2. Untuk apakah statement di bawah ini dilakukan dalam TotalDC()?
+
+`double lsum = totalDC(arr, l, mid);` berfungsi untuk menghitung total nilai (sum) dari elemen array disebelah kiri (lsum). Rentang data yang dihitung adalah dari batas awal (l) sampai ke titik tengah (mid)
+
+`double rsum = totalDC(arr, mid+1, r);` berfungsi untuk menghitung total nilai (sum) dari elemen array disebelah kanan (rsum). Rentang data yang dihitung adalah dari elemen setelah titik tengah (mid + 1) sampai ke batas akhir (r).
+
+### 3. Kenapa diperlukan penjumlahan hasil lsum dan rsum seperti di bawah ini?
+
+Untuk menjumlah total keselurahan dari elemen array sebelah kanan (rsum) dan kiri (lsum) dan menghasilkan satu hasil (return).
+
+### 4. Apakah base case dari totalDC()?
+
+`if (l == r) {
+            return arr[l];
+        }`
+
+yaitu ketika elemen array sebelah kiri(lsum) sama dengan sebelah kanan (rsum)

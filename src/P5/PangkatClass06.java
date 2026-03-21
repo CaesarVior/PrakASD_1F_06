@@ -8,10 +8,18 @@ public class PangkatClass06 {
         pangkat = p;
     }
 
-    int pangkatBF(int a, int n) {
+    // int pangkatBF(int a, int n) {
+    // int hasilLocal = 1;
+    // for (int i = 0; i < n; i++) {
+    // hasilLocal = hasilLocal * a;
+    // }
+    // return hasilLocal;
+    // }
+
+    int pangkatBF() {
         int hasilLocal = 1;
-        for (int i = 0; i < n; i++) {
-            hasilLocal = hasilLocal * a;
+        for (int i = 0; i < this.pangkat; i++) {
+            hasilLocal = hasilLocal * this.nilai;
         }
         return hasilLocal;
     }
