@@ -1,9 +1,9 @@
-|            | Algorithm and Data Structure |
-| ---------- | ---------------------------- |
-| NIM        | 254107020055                 |
-| Nama       | Caesar Vior Byrnanda         |
-| Kelas      | TI - 1F                      |
-| Repository | [link] ()                    |
+|            | Algorithm and Data Structure                                 |
+| ---------- | ------------------------------------------------------------ |
+| NIM        | 254107020055                                                 |
+| Nama       | Caesar Vior Byrnanda                                         |
+| Kelas      | TI - 1F                                                      |
+| Repository | https://github.com/CaesarVior/PrakASD_1F_06/tree/main/src/P5 |
 
 # JobSheet 5 #5 BRUTE FORCE DAN DIVIDE CONQUER
 
