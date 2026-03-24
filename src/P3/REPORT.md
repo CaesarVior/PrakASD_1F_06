@@ -74,3 +74,21 @@ Main Mahasiswa
 ### 2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
 
 Karena pada indeks ke-0 belum dilakukan inisialisasi object nya, jadi java bingung atribute nim itu didapatkan darimana. `myArrayOfMahasiswa` hanya menginisalisasi berapa banyak isi array nya.
+
+# Percobaan 3:
+
+## Screenshot kode program
+
+Class Matakuliah
+![Screenshot](img/Percobaan3_Class.png)
+
+Main Matakuliah
+![Screenshot](img/Percobaan3_Main.png)
+
+## Screenshot hasil percobaan
+
+![Screenshot](img/Percobaan3_Hasil.png)
+
+## Pertanyaan
+
+### 1. Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya

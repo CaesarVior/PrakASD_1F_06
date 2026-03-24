@@ -6,6 +6,10 @@ public class MataKuliah06 {
     public int sks;
     public int jumlahJam;
 
+    public MataKuliah06() {
+
+    }
+
     public MataKuliah06(String kode, String nama, int sks, int jumlahJam) {
         this.kode = kode;
         this.nama = nama;
