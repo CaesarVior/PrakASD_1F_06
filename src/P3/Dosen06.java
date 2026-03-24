@@ -1,0 +1,16 @@
+package P3;
+
+public class Dosen06 {
+    public String kode;
+    public String nama;
+    public Boolean jenisKelamin;
+    public int usia;
+
+    // Konstruktor sesuai permintaan soal
+    public Dosen06(String kode, String nama, Boolean jenisKelamin, int usia) {
+        this.kode = kode;
+        this.nama = nama;
+        this.jenisKelamin = jenisKelamin;
+        this.usia = usia;
+    }
+}

@@ -92,3 +92,19 @@ Main Matakuliah
 ## Pertanyaan
 
 ### 1. Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya
+
+![Screenshot](img/Percobaan3_Pertanyaan1.png)
+
+### 2. Tambahkan method tambahData() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menambahkan data Matakuliah
+
+![Screenshot](img/Percobaan3_Pertanyaan2_Class.png) ![Screenshot](img/Percobaan3_Pertanyaan2_Main.png)
+![Screenshot](img/Percobaan3_Pertanyaan2_Hasil.png)
+
+### 3. Tambahkan method cetakInfo() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menampilkan data hasil inputan di layar
+
+![Screenshot](img/Percobaan3_Pertanyaan3_Class.png) ![Screenshot](img/Percobaan3_Pertanyaan3_Main.png)
+![Screenshot](img/Percobaan3_Pertanyaan3_Hasil.png)
+
+### 4. Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dariarray of object Matakuliah ditentukan oleh user melalui input dengan Scanner
+
+![Screenshot](img/Percobaan3_Pertanyaan4_Main.png) ![Screenshot](img/Percobaan3_Pertanyaan4_Hasil.png)
