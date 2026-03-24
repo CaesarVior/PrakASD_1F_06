@@ -6,7 +6,6 @@ public class Dosen06 {
     public Boolean jenisKelamin;
     public int usia;
 
-    // Konstruktor sesuai permintaan soal
     public Dosen06(String kode, String nama, Boolean jenisKelamin, int usia) {
         this.kode = kode;
         this.nama = nama;

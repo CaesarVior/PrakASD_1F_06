@@ -108,3 +108,17 @@ Main Matakuliah
 ### 4. Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dariarray of object Matakuliah ditentukan oleh user melalui input dengan Scanner
 
 ![Screenshot](img/Percobaan3_Pertanyaan4_Main.png) ![Screenshot](img/Percobaan3_Pertanyaan4_Hasil.png)
+
+# Tugas 1
+
+![Screenshot](img/Tugas1_Dosen_Class.png) ![Screenshot](img/Tugas1&2_Hasil.png)
+
+# Tugas 2
+
+1
+![Screenshot](img/Tugas2_DataDosen_Class_1.png)
+
+2
+![Screenshot](img/Tugas2_DataDosen_Class_2.png)
+
+![Screenshot](img/Tugas1&2_Hasil.png)

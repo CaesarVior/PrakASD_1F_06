@@ -10,28 +10,26 @@ public class DosenDemo06 {
         for (int i = 0; i < daftarDosen.length; i++) {
             System.out.println("Masukkan Data Dosen ke-" + (i + 1));
             System.out.print("Kode          : ");
-            String kd = input.nextLine();
+            String kode = input.nextLine();
             System.out.print("Nama          : ");
-            String nm = input.nextLine();
+            String nama = input.nextLine();
             System.out.print("Jenis Kelamin (Pria/Wanita): ");
             String jkStr = input.nextLine();
             boolean jk = jkStr.equalsIgnoreCase("Pria");
             System.out.print("Usia          : ");
-            int us = input.nextInt();
+            int usia = input.nextInt();
             input.nextLine();
 
-            daftarDosen[i] = new Dosen06(kd, nm, jk, us);
+            daftarDosen[i] = new Dosen06(kode, nama, jk, usia);
             System.out.println("------------------------------");
         }
 
-        System.out.println("\n===== DATA SEMUA DOSEN =====");
-        for (Dosen06 dosen : daftarDosen) {
-            System.out.println("Kode    : " + dosen.kode);
-            System.out.println("Nama    : " + dosen.nama);
-            System.out.println("Gender  : " + (dosen.jenisKelamin ? "Pria" : "Wanita"));
-            System.out.println("Usia    : " + dosen.usia + " Tahun");
-            System.out.println("------------------------------");
-        }
+        System.out.println("\n>>> LAPORAN DATA DOSEN (MENGGUNAKAN CLASS DATADOSEN) <<<");
+        DataDosen06.dataSemuaDosen(daftarDosen);
+        DataDosen06.jumlahDosenPerJenisKelamin(daftarDosen);
+        DataDosen06.rerataUsiaDosenPerJenisKelamin(daftarDosen);
+        DataDosen06.infoDosenPalingTua(daftarDosen);
+        DataDosen06.infoDosenPalingMuda(daftarDosen);
 
         input.close();
     }
