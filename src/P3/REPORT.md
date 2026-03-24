@@ -47,3 +47,23 @@ Tidak ada, karena java secara default sudah membuatkan konstruktor kosong sepert
 Kode tersebut berfungsi untuk membuat objek baru dari class Mahasiswa06 dan menyimpannya ke dalam indeks 0 dari arrayOfMahasiswa serta untuk menggunakan atribute yang ada di class Mahasiswa06. Setelah objek dibuat, baris berikutnya digunakan untuk mengisi data ke dalam atribut nim, nama, kelas, dan ipk khusus untuk objek di indeks ke-0 tersebut.
 
 ### 5. Mengapa class Mahasiswa dan MahasiswaDemo dipisahkan pada uji coba 3.2?
+
+Selain untuk mempraktikkan Array of Objects, pemisahan ini dilakukan agar terjadi pemisahan tanggung jawab atau OOP sederhana.
+
+# Percobaan 2:
+
+## Screenshot kode program
+
+Class Mahasiswa
+![Screenshot](img/Percobaan1_Class.png)
+
+Main Mahasiswa
+![Screenshot](img/Percobaan2_Main.png)
+
+## Screenshot hasil percobaan
+
+![Screenshot](img/Percobaan2_Hasil.png)
+
+## Pertanyaan
+
+### 1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program pada langkah no 3
