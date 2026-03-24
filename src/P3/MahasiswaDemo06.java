@@ -12,13 +12,13 @@ public class MahasiswaDemo06 {
             arrayOfMahasiswa[i] = new Mahasiwa06();
 
             System.out.println("Masukkan Data Mahasiswa ke-" + (i + 1));
-            System.out.print("NIM       : ");
+            System.out.print("NIM : ");
             arrayOfMahasiswa[i].nim = sc.nextLine();
-            System.out.print("Nama      : ");
+            System.out.print("Nama : ");
             arrayOfMahasiswa[i].nama = sc.nextLine();
-            System.out.print("Kelas     : ");
+            System.out.print("Kelas : ");
             arrayOfMahasiswa[i].kelas = sc.nextLine();
-            System.out.print("IPK       : ");
+            System.out.print("IPK : ");
             dummy = sc.nextLine();
 
             arrayOfMahasiswa[i].ipk = Float.parseFloat(dummy);
@@ -27,7 +27,8 @@ public class MahasiswaDemo06 {
         }
 
         for (int i = 0; i < 3; i++) {
-            arrayOfMahasiswa[i].cetakInfo06();
+            arrayOfMahasiswa[0].cetakInfo06();
+
         }
 
         sc.close();

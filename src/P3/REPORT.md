@@ -67,3 +67,10 @@ Main Mahasiswa
 ## Pertanyaan
 
 ### 1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program pada langkah no 3
+
+![Screenshot](img/Percobaan2_Pertanyaan1_Class.png)
+![Screenshot](img/Percobaan2_Pertanyaan1_Main.png)
+
+### 2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
+
+Karena pada indeks ke-0 belum dilakukan inisialisasi object nya, jadi java bingung atribute nim itu didapatkan darimana. `myArrayOfMahasiswa` hanya menginisalisasi berapa banyak isi array nya.
