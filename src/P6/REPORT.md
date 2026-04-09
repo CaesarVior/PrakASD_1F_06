@@ -107,3 +107,8 @@ Untuk apakah proses tersebut, jelaskan! Proses tersebut digunakan untuk swapping
 
 ![Screenshot](img/Percobaan2_Pertanyaan2_Class_Insertion_Sort.png) ![Screenshot](img/Percobaan2_Pertanyaan2_Main_Insertion_Sort.png)
 ![Screenshot](img/Percobaan2_Pertanyaan2_Hasil_Insertion_Sort.png)
+
+### 4.Mengurutkan Data Mahasiswa Berdasarkan IPK (Insertion Sort DESC)
+
+![Screenshot](img/Percobaan2_Pertanyaan2_Class_Insertion_Sort_DESC.png) ![Screenshot](img/Percobaan2_Pertanyaan2_Main_Insertion_Sort_DESC.png)
+![Screenshot](img/Percobaan2_Pertanyaan2_Hasil_Insertion_Sort_DESC.png)
