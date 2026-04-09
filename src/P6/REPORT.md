@@ -100,3 +100,5 @@ Hasil Percobaan
 
 ![Screenshot](img/Percobaan2_Pertanyaan2_Class_Selection_Sort.png) ![Screenshot](img/Percobaan2_Pertanyaan2_Main_Selection_Sort.png)
 ![Screenshot](img/Percobaan2_Pertanyaan2_Hasil_Selection_Sort.png)
+
+Untuk apakah proses tersebut, jelaskan! Proses tersebut digunakan untuk swapping (penukaran nilai/objek). Objek mahasiswa yang memiliki IPK paling kecil (yang letak indeksnya tersimpan di variabel idxMin) disimpan sementara di tmp, kemudian posisi idxMin tersebut ditukar nilainya dengan elemen di posisi ke-i. Tujuannya adalah menempatkan mahasiswa ber-IPK terkecil tersebut ke posisi yang paling depan pada bagian array yang belum terurut
