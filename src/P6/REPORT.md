@@ -112,3 +112,9 @@ Untuk apakah proses tersebut, jelaskan! Proses tersebut digunakan untuk swapping
 
 ![Screenshot](img/Percobaan2_Pertanyaan2_Class_Insertion_Sort_DESC.png) ![Screenshot](img/Percobaan2_Pertanyaan2_Main_Insertion_Sort_DESC.png)
 ![Screenshot](img/Percobaan2_Pertanyaan2_Hasil_Insertion_Sort_DESC.png)
+
+# Latihan Praktikum
+
+![Screenshot](img/Tugas_Constructor.png)
+![Screenshot](img/Tugas_Class_1.png) ![Screenshot](img/Tugas_Class_2.png)
+![Screenshot](img/Tugas_Main.png)
