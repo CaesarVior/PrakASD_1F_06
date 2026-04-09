@@ -90,3 +90,8 @@ Hasil Percobaan
        Karena pada setiap tahap program mulai dari data ke-1, membandingkannya dengan data ke-2 sebanyak i elemen di posisi paling belakang pasti sudah terurut dan menempati posisi yang benar. Sehingga, tidak perlu membandingkan elemen-elemen di posisi tersebut lagi (batas akhirnya terus dikurangi sebesar i).
 
     c. Jika banyak data di dalam listMhs adalah 50, maka berapa kali perulangan i akan berlangsung? Dan ada berapa tahap bubble sort yang ditempuh?
+       Perulangan i akan berlangsung sebanyak 49 kali (karena misalkan ada 50 data. Maka, 50 - 1 = 49). Tahap bubble sort yang ditempuh adalah 49 tahap.
+
+### 2. Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyborad) yang terdiri dari nim, nama, kelas, dan ipk!
+
+![Screenshot](img/Percobaan2_Pertanyaan2_Main.png) ![Screenshot](img/Percobaan2_Pertanyaan2_Hasil.png) ![Screenshot](img/Percobaan2_Hasil_2.png)

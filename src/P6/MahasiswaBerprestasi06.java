@@ -1,6 +1,6 @@
 package P6;
 
-public class MahasiswaBerprestasi {
+public class MahasiswaBerprestasi06 {
     Mahasiswa06[] listMhs = new Mahasiswa06[5];
     int idx;
 
