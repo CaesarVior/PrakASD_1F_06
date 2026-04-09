@@ -95,3 +95,8 @@ Hasil Percobaan
 ### 2. Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyborad) yang terdiri dari nim, nama, kelas, dan ipk!
 
 ![Screenshot](img/Percobaan2_Pertanyaan2_Main.png) ![Screenshot](img/Percobaan2_Pertanyaan2_Hasil.png) ![Screenshot](img/Percobaan2_Hasil_2.png)
+
+### 3.Mengurutkan Data Mahasiswa Berdasarkan IPK (Selection Sort)
+
+![Screenshot](img/Percobaan2_Pertanyaan2_Class_Selection_Sort.png) ![Screenshot](img/Percobaan2_Pertanyaan2_Main_Selection_Sort.png)
+![Screenshot](img/Percobaan2_Pertanyaan2_Hasil_Selection_Sort.png)
