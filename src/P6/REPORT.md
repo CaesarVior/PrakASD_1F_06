@@ -64,3 +64,29 @@ Fungsi while berfungsi untuk menggeser (shifting) semua angka yang "lebih besar"
 ### 4. Pada Insertion sort, apakah tujuan dari perintah
 
 Fungsinya adalah untuk menggeser data ke kanan agar tersedia tempat kosong bagi elemen yang sedang diurutkan (temp).
+
+# Praktikum 2: Screenshot hasil percobaan
+
+Constructor Mahasiswa
+![Screenshot](img/Percobaan2_Constructor.png)
+
+Class Mahasiswa
+![Screenshot](img/Percobaan2_Class.png)
+
+Main Mahasiswa
+![Screenshot](img/Percobaan2_Main.png)
+
+Hasil Percobaan
+![Screenshot](img/Percobaan2_Hasil_1.png) ![Screenshot](img/Percobaan2_Hasil_2.png)
+
+## Pertanyaan
+
+### 1. Perhatikan perulangan di dalam bubbleSort():
+
+    a. Mengapa syarat dari perulangan i adalah i < listMhs.length - 1?
+       Karena perulangan i (outer looping) menentukan jumlah tahap program mulai dari data ke-1, membandingkannya dengan data ke-2 yang dibutuhkan untuk mengurutkan seluruh elemen. Untuk array berisi N elemen, dibutuhkan paling banyak N-1 tahapan pembandingan agar semua data dapat terurut dengan benar.
+
+    b. Mengapa syarat dari perulangan j adalah j < listMhs.length - i?
+       Karena pada setiap tahap program mulai dari data ke-1, membandingkannya dengan data ke-2 sebanyak i elemen di posisi paling belakang pasti sudah terurut dan menempati posisi yang benar. Sehingga, tidak perlu membandingkan elemen-elemen di posisi tersebut lagi (batas akhirnya terus dikurangi sebesar i).
+
+    c. Jika banyak data di dalam listMhs adalah 50, maka berapa kali perulangan i akan berlangsung? Dan ada berapa tahap bubble sort yang ditempuh?
