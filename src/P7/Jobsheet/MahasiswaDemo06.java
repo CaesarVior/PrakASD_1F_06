@@ -2,12 +2,16 @@ package P7.Jobsheet;
 
 import java.util.Scanner;
 
-public class MahasiswaDemo {
+public class MahasiswaDemo06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        MahasiswaBerprestasi06 list = new MahasiswaBerprestasi06();
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int amountStudent = sc.nextInt();
 
-        for (int i = 0; i < list.listMhs.length; i++) {
+        sc.nextLine();
+        MahasiswaBerprestasi06 list = new MahasiswaBerprestasi06(amountStudent);
+
+        for (int i = 0; i < amountStudent; i++) {
             System.out.println("Masukkan Data Mahasiswa ke-" + (i + 1));
             System.out.print("NIM   : ");
             String nim = sc.nextLine();
@@ -55,9 +59,21 @@ public class MahasiswaDemo {
         System.out.print("IPK: ");
         double cari = sc.nextDouble();
 
-        System.out.println("menggunakan sequential searching");
-        int posisi = list.sequentialSearching(cari);
-        list.tampilPosisi(cari, posisi);
-        list.tampilDataSearch(cari, posisi);
+        // System.out.println("menggunakan sequential searching");
+        // int posisi = list.sequentialSearching(cari);
+        // list.tampilPosisi(cari, posisi);
+        // list.tampilDataSearch(cari, posisi);
+
+        System.out.println("------------------------------------------");
+        System.out.println("Menggunakan Binary Search");
+
+        list.selectionSort();
+        System.out.println("Data setelah diurutkan (Ascending):");
+        list.tampil();
+
+        int posisiBinary = list.findBinarySearch(cari, 0, list.idx - 1);
+        list.tampilPosisi(cari, posisiBinary);
+        list.tampilDataSearch(cari, posisiBinary);
+
     }
 }
