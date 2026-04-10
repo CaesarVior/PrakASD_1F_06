@@ -28,7 +28,6 @@ public class ManajemenBuku06 {
                 new Peminjaman06(mahasiswa06[0], buku06[1], 4),
         };
 
-        // Hitung denda di awal supaya data denda tidak nol saat ditampilkan/diurutkan
         for (Peminjaman06 p : peminjaman06) {
             p.hitungDenda();
         }
@@ -44,7 +43,7 @@ public class ManajemenBuku06 {
             System.out.print("Pilih: ");
 
             choices06 = sc.nextInt();
-            sc.nextLine(); // Penting: Membersihkan buffer agar input NIM tidak terlewati
+            sc.nextLine();
 
             switch (choices06) {
                 case 1:
@@ -69,7 +68,6 @@ public class ManajemenBuku06 {
                     break;
 
                 case 4:
-                    // Insertion Sort: Urutkan denda dari tertinggi ke terendah
                     for (int i = 1; i < peminjaman06.length; i++) {
                         Peminjaman06 temp = peminjaman06[i];
                         int j = i - 1;
@@ -92,7 +90,6 @@ public class ManajemenBuku06 {
 
                     System.out.println("Hasil Pencarian:");
                     for (Peminjaman06 p : peminjaman06) {
-                        // Memanggil atribut 'nim' dari dalam objek 'student' (Peminjaman06)
                         if (p.student.nim.equalsIgnoreCase(cariNim)) {
                             p.tampilPeminjaman();
                             ditemukan = true;
