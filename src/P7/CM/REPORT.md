@@ -7,14 +7,10 @@
 
 # CM 1 Studi Kasus
 
-Class Sorting (BUBBLE SORT)
-![Screenshot](img/image1.png)
-
-Main Sorting (BUBBLE SORT)
-![Screenshot](img/image2.png)
-
-Class Sorting (SELECTION SORT)
-![Screenshot](img/image3.png)
+Hasil Running
+![alt text](img/image1.png)
+![alt text](img/image2.png)
+![alt text](img/image3.png)
 
 ```
 package P7.CM;
