@@ -94,3 +94,26 @@ Ketika user memilih menu nomor 2 pada `MahasiswaDemo06.java` akan dihasilkan nil
 ![Screenshot](img/P9_HasilPercobaan2_Pertanyaan2.png)
 
 Hasilnya tidak ada masalah, kecuali jika user salah memasukkan yang menyebabkan nilainya menjadi minus.
+
+# Tugas
+
+# Hasil Percobaan
+
+### Class Surat06
+
+![Screenshot](img/P9_ClassSurat.png)
+
+### Class StackSurat06
+
+![Screenshot](img/P9_ClassStackSurat_1.png)
+![Screenshot](img/P9_ClassStackSurat_2.png)
+
+### Class MainSurat06
+
+![Screenshot](img/P9_ClassMainSurat_1.png)
+![Screenshot](img/P9_ClassMainSurat_2.png)
+
+# Hasil Running
+
+![Screenshot](img/P9_HasilPercobaan_Tugas1_1.png)
+![Screenshot](img/P9_HasilPercobaan_Tugas1_2.png)
