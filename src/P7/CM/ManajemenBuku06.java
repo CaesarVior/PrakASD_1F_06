@@ -7,6 +7,11 @@ public class ManajemenBuku06 {
         Scanner sc = new Scanner(System.in);
         int choices06;
 
+        // Modifikasi jawaban A -> mengagnti instansiasi di line 28 untuk menguji
+        // lamaPinjam apakah berhasil jika lebih dari 20 hari
+        // Modifikasi jawaban B -> menambahkan logika p.isCanceled = true maka
+        // ditemukan=false
+
         Mahasiswa06[] mahasiswa06 = {
                 new Mahasiswa06("22001", "Andi", "Teknik Informatika"),
                 new Mahasiswa06("22002", "Budi", "Teknik Informatika"),
@@ -21,11 +26,11 @@ public class ManajemenBuku06 {
         };
 
         Peminjaman06[] peminjaman06 = {
-                new Peminjaman06(mahasiswa06[0], buku06[0], 7),
-                new Peminjaman06(mahasiswa06[1], buku06[1], 3),
-                new Peminjaman06(mahasiswa06[2], buku06[2], 10),
-                new Peminjaman06(mahasiswa06[2], buku06[3], 6),
-                new Peminjaman06(mahasiswa06[0], buku06[1], 4),
+                new Peminjaman06(mahasiswa06[0], buku06[0], 15, true), // andi
+                new Peminjaman06(mahasiswa06[1], buku06[1], 3, false), // budi
+                new Peminjaman06(mahasiswa06[2], buku06[2], 10, false), // citra
+                new Peminjaman06(mahasiswa06[2], buku06[3], 6, true), // citra
+                new Peminjaman06(mahasiswa06[0], buku06[1], 4, false), // andi
         };
 
         for (Peminjaman06 p : peminjaman06) {
@@ -87,13 +92,21 @@ public class ManajemenBuku06 {
                     System.out.print("\nMasukkan NIM yang dicari: ");
                     String cariNim = sc.nextLine();
                     boolean ditemukan = false;
+                    int i = 0;
 
                     System.out.println("Hasil Pencarian:");
                     for (Peminjaman06 p : peminjaman06) {
                         if (p.student.nim.equalsIgnoreCase(cariNim)) {
-                            p.tampilPeminjaman();
-                            ditemukan = true;
+                            // Modifikasi
+                            if (p.isCanceled == true) {
+                                ditemukan = false;
+                            } else {
+                                p.tampilPeminjaman();
+                                ditemukan = true;
+                            }
                         }
+
+                        i++;
                     }
 
                     if (!ditemukan) {

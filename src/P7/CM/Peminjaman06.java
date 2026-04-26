@@ -8,17 +8,26 @@ public class Peminjaman06 {
     int terlambat;
     int denda;
 
-    public Peminjaman06(Mahasiswa06 student, Buku06 book, int lamaPinjam) {
+    // Modifikasi jawaban A -> menambahkan denda > 20000 di fungsi hitung denda
+    // Modifikasi jawaban B -> menambahkan atribut isCanceled bertipe boolean lalu
+    // dimasukkan kekonstruktor;
+    boolean isCanceled = false;
+
+    public Peminjaman06(Mahasiswa06 student, Buku06 book, int lamaPinjam, boolean isCanceled) {
         this.student = student;
         this.book = book;
         this.lamaPinjam = lamaPinjam;
-
+        this.isCanceled = isCanceled;
     }
 
     public void hitungDenda() {
         if (lamaPinjam > batasPinjam) {
             terlambat = lamaPinjam - batasPinjam;
             denda = terlambat * 2000;
+
+            if (denda > 20000) {
+                denda = 20000;
+            }
         } else {
             terlambat = 0;
             denda = 0;

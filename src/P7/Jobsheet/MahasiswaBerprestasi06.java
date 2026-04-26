@@ -30,11 +30,6 @@ public class MahasiswaBerprestasi06 {
     // if (listMhs[j].ipk > listMhs[j - 1].ipk) {
     // Mahasiswa06 tmp = listMhs[j];
     // listMhs[j] = listMhs[j - 1];
-    // listMhs[j - 1] = tmp;
-    // }
-    // }
-    // }
-    // }
 
     void selectionSort() {
         for (int i = 0; i < listMhs.length - 1; i++) {
