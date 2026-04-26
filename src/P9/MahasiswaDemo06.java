@@ -13,6 +13,7 @@ public class MahasiswaDemo06 {
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
+            System.out.println("5. Melihat Tugas Terbawah");
             System.out.print("Pilih: ");
 
             pilih = scan.nextInt();
@@ -54,6 +55,13 @@ public class MahasiswaDemo06 {
                     System.out.println("Daftar semua tugas");
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print();
+                    break;
+
+                case 5:
+                    Mahasiswa06 lihatData = stack.lowestData();
+                    if (lihatData != null) {
+                        System.out.println("Tugas terbawah dikumpulkan oleh " + lihatData.nama);
+                    }
                     break;
 
                 default:
