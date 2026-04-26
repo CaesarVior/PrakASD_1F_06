@@ -11,20 +11,17 @@
 
 # Hasil Percobaan
 
-### 1.1 Class Mahasiswa06
+### Class Mahasiswa06
 
-Class ini berfungsi sebagai model data untuk menyimpan atribut mahasiswa.
 ![Screenshot](img/P9_ClassMahasiswa.png)
 
-### 1.2 Class StackTugasMahasiswa06
+### Class StackTugasMahasiswa06
 
-Class ini mengimplementasikan struktur data Stack menggunakan array.
 ![Screenshot](img/P9_ClassStackTugasMahasiswa_1.png)
 ![Screenshot](img/P9_ClassStackTugasMahasiswa_2.png)
 
-### 1.3 Class Utama (Main)
+### Class Utama (Main)
 
-Class ini menangani antarmuka menu dan input user.
 ![Screenshot](img/P9_ClassUtama_1.png)
 ![Screenshot](img/P9_ClassUtama_2.png)
 
@@ -54,3 +51,46 @@ Untuk mengecek apakah array/stack sudah penuh atau tidak kapasitasnya. Sehingga 
 Menambahkan class baru di `StackTugasMahasiswa06.java` agar bisa melihat data pertama yang dimasukkan. Sehingga ditambahkan menu baru untuk melihat data pertama.
 ![Screenshot](img/P9_ClassStackTugasMahasiswa_Pertanyaan4.png)
 ![Screenshot](img//P9_HasilPercobaan_Pertanyaan4.png)
+
+### 5. Tambahkan method untuk dapat menghitung berapa banyak tugas yang sudah dikumpulkan saat ini, serta tambahkan operasi menunya!
+
+## Class Mahasiswa Demo untuk Menu yang Ditambahkan
+
+![Screenshot](img/P9_ClassUtama_Pertanyaan5_1.png)
+![Screenshot](img/P9_ClassUtama_Pertanyaan5_2.png)
+
+## Class Stack Tugas Mahasiswa
+
+![Screenshot](img/P9_ClassStackTugasMahasiswa_Pertanyaan5.png)
+
+## Hasil Percobaan
+
+![Screenshot](img//P9_HasilPercobaan_Pertanyaan4.png)
+
+# Percobaan 2
+
+# Hasil Percobaan
+
+### Class StackKonversi06
+
+![Screenshot](img/P9_ClassStackKonversi06.png)
+
+### Class StackTugasMahasiswa06
+
+![Screenshot](img/P9_ClassStackMahasiswa_Percobaan2.png)
+
+# Hasil Running
+
+![Screenshot](img/P9_HasilPercobaan_Percobaan2.png)
+
+## Pertanyaan
+
+### 1. Jelaskan alur kerja dari method konversiDesimalKeBiner!
+
+Ketika user memilih menu nomor 2 pada `MahasiswaDemo06.java` akan dihasilkan nilai dari mahasiswa yang dihitung di `MahasiswaDemo06.java` method `tugasDinilai`. Lalu ketika nilai sudah didapatkan maka akan ada variabel nilai yang dikirimkan ke Class `StackTugasMahasiswa06.java` method `konversiDesimalKeBiner`. Dari method tersebut, akan memanggil class `StackKonversi06` untuk membuat stack baru. Lalu didalam Class `StackTugasMahasiswa06.java` method `konversiDesimalKeBiner` akan dihitung menggunakan perulangan berapa binernya dengan kondisi ketika `nilai > 0` maka akan dihitung terus binernya.
+
+### 1. Pada method konversiDesimalKeBiner, ubah kondisi perulangan menjadi while (kode != 0), bagaimana hasilnya? Jelaskan alasannya!
+
+![Screenshot](img/P9_HasilPercobaan2_Pertanyaan2.png)
+
+Hasilnya tidak ada masalah, kecuali jika user salah memasukkan yang menyebabkan nilainya menjadi minus.

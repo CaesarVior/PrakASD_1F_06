@@ -31,7 +31,6 @@ public class StackTugasMahasiswa06 {
         if (!isFull()) {
             top++;
             stack[top] = mhs;
-            System.out.println("DEBUG: Berhasil push " + mhs.nama + " ke index " + top);
         } else {
             System.out.println("Stack penuh! Tidak bisa menambahkan tugas lagi");
         }
@@ -66,6 +65,15 @@ public class StackTugasMahasiswa06 {
         }
     }
 
+    public int totalData() {
+        if (!isEmpty()) {
+            return top + 1;
+        } else {
+            System.out.println("Stack kosong! Tidak ada tugas yang dikumpulkan");
+            return 0;
+        }
+    }
+
     // public void print() {
     // for (int i = 0; i <= top; i++) {
     // System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" +
@@ -80,6 +88,22 @@ public class StackTugasMahasiswa06 {
                     stack[i].kelas);
         }
         System.out.println("");
+    }
+
+    public String konversiDesimalKeBiner(int nilai) {
+        StackKonversi06 stack = new StackKonversi06();
+        while (nilai > 0) {
+            int sisa = nilai % 2;
+            stack.push(sisa);
+            nilai = nilai / 2;
+        }
+
+        String hasil = "";
+        while (!stack.isEmpty()) {
+            hasil += stack.pop();
+        }
+
+        return hasil.equals("") ? "0" : hasil;
     }
 
 }
