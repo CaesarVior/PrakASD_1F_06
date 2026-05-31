@@ -53,3 +53,7 @@ Method print disitu digunakan untuk mengeprint data ketika front nya tidak berad
         }`
 
 ### 7. Lakukan modifikasi program sehingga pada saat terjadi queue overflow (antrian penuh) dan queue underflow (antrian kosong), program langsung dihentikan!
+
+## ![Screenshot](img/P10_Pertanyaan7_Enqueue.png)
+
+## ![Screenshot](img/P10_Pertanyaan7_Dequeue.png)
