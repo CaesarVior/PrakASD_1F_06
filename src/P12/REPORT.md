@@ -67,3 +67,22 @@ Ketika sebuah linked list dalam kondisi kosong (isEmpty() == true) dimasukkan se
 # Hasil Running
 
 ![Screenshot](img/Percobaan2/P12_HasilPercobaan.png)
+
+## Pertanyaan
+
+### 1. Jelaskan fungsi masing-masing statement tersebut pada proses penghapusan node!
+
+head = head.next berfungsi untuk memindahkan pointer head maju ke node setelahnya. Sedangkan, head.prev = null; b erfungsi untuk memutus hubungan pointer mundur (prev) milik node depan yang baru agar menunjuk ke null
+
+### 2. Modifikasi method removeFirst() dan removeLast() agar program menampilkan data yang berhasil dihapus!
+
+![Screenshot](img/Percobaan2/P12_HasilModifikasi.png)
+
+## Tugas
+
+![Screenshot](img/Tugas/P12_DLLClass_1.png)
+![Screenshot](img/Tugas/P12_DLLClass_2.png)
+![Screenshot](img/Tugas/P12_DLLClass_3.png)
+![Screenshot](img/Tugas/P12_Tugas_1.png)
+![Screenshot](img/Tugas/P12_Tugas_2.png)
+![Screenshot](img/Tugas/P12_Tugas_3.png)
