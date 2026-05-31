@@ -31,3 +31,25 @@
 
 ![Screenshot](img/Percobaan1/P12_HasilPercobaan_1.png)
 ![Screenshot](img/Percobaan1/P12_HasilPercobaan_2.png)
+
+## Pertanyaan
+
+### 1. Jelaskan perbedaan struktur dan mekanisme traversal antara Single Linked List dan Double Linked List!
+
+Single Linked List, setiap node hanya memiliki satu buah pointer (next) yang menyimpan alamat node berikutnya. Sedangkan pada Double Linked List, setiap node memiliki dua buah pointer, yaitu next dan prev
+
+### 2. Perhatikan class Node, di dalamnya terdapat atribut next dan prev. Jelaskan fungsi masing-masing atribut tersebut pada proses traversal dan manipulasi node!
+
+Atribut next berfungsi untuk menyimpan referensi atau alamat memori dari node setelahnya. Sedangkan, Atribut prev: Berfungsi untuk menyimpan referensi atau alamat memori dari node sebelumnya.
+
+### 3. Perhatikan konstruktor pada class DoubleLinkedList. Jelaskan fungsi konstruktor tersebut terhadap kondisi awal linked list!
+
+Konstruktor digunakan untuk menginisialisasi kondisi awal bahwa Linked List yang baru dibuat berada dalam keadaan kosong
+
+### 4. Mengapa head dan tail harus menunjuk node yang sama ketika linked list masih kosong?
+
+Ketika sebuah linked list dalam kondisi kosong (isEmpty() == true) dimasukkan sebuah data baru, maka node baru tersebut otomatis menjadi satu-satunya elemen di dalam list.
+
+### 5. Modifikasi method print() agar menampilkan pesan "Linked List masih kosong" ketika tidak terdapat data pada linked list!
+
+### 6. Modifikasi kode program dengan menambahkan method printReverse() untuk menampilkan seluruh data pada Double Linked List secara terbalik, dimulai dari node tail menuju head!
