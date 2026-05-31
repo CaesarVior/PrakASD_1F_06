@@ -9,8 +9,6 @@
 
 # Percobaan 1
 
-# Hasil Percobaan
-
 ### Class Mahasiswa
 
 ![Screenshot](img/Percobaan1/P11_MahasiswaClass.png)
@@ -46,3 +44,34 @@ Variabel temp (atau tmp) berguna sebagai penanda jalan sementara. Karena program
 
 ![Screenshot](img/Percobaan1/P11_HasilModifikasi_Percobaan1.png)
 ![Screenshot](img/Percobaan1/P11_HasilPercobaan_Pertanyaan3.png)
+
+# Percobaan 2
+
+# Hasil Percobaan
+
+### Class SingleLinkedList
+
+![Screenshot](img/Percobaan2/P11_SingleLinkedListClass_1.png)
+![Screenshot](img/Percobaan2/P11_SingleLinkedListClass_2.png)
+
+### Class Utama (Main)
+
+![Screenshot](img/Percobaan2/P11_SLLMain.png)
+
+# Hasil Running
+
+![Screenshot](img/Percobaan2/P11_HasilPercobaan.png)
+
+## Pertanyaan
+
+### 1. Mengapa digunakan keyword break pada fungsi remove? Jelaskan!
+
+Keyword break digunakan untuk menghentikan perulangan (looping) secara paksa. Karena tujuan utama dari method remove adalah mencari satu data spesifik untuk dihapus, maka ketika data yang dicari sudah ketemu dan sukses dihapus, perulangan tidak perlu lagi dilanjutkan sampai ke ujung paling belakang Linked List.
+
+### 2. Jelaskan kegunaan kode dibawah pada method remove!
+
+Baris temp.next = temp.next.next; Kegunaannya adalah untuk melompati objek node yang ingin dihapus. Rantai penghubung dari posisi node saat ini (temp) langsung disambungkan ke node setelah target (cucunya), sehingga node target otomatis terlepas dari rangkaian Linked List dan terhapus.
+
+# Tugas
+
+![Screenshot](img/Tugas/P11_HasilPercobaan.png)
