@@ -19,7 +19,7 @@
 
 ### Class DoubleLinkedList
 
-![Screenshot](img/Percobaan1/P12_DoubleLinkedListClass_1.png)
+![Screenshot](img/Percobaan1/P12_DoubleLinkedListClass_1.png)C
 ![Screenshot](img/Percobaan1/P12_DoubleLinkedListClass_2.png)
 
 ### Class Utama (Main)
@@ -57,3 +57,13 @@ Ketika sebuah linked list dalam kondisi kosong (isEmpty() == true) dimasukkan se
 ### 6. Modifikasi kode program dengan menambahkan method printReverse() untuk menampilkan seluruh data pada Double Linked List secara terbalik, dimulai dari node tail menuju head!
 
 ![Screenshot](img/Percobaan1/P12_HasilModifikasi_Pertanyaan6.png)
+
+# Percobaan 1
+
+### Class Mahasiswa
+
+![Screenshot](img/Percobaan2/P12_DoubleLinkedListClass.png)
+
+# Hasil Running
+
+![Screenshot](img/Percobaan2/P12_HasilPercobaan.png)
