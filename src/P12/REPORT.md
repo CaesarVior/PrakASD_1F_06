@@ -52,4 +52,8 @@ Ketika sebuah linked list dalam kondisi kosong (isEmpty() == true) dimasukkan se
 
 ### 5. Modifikasi method print() agar menampilkan pesan "Linked List masih kosong" ketika tidak terdapat data pada linked list!
 
+![Screenshot](img/Percobaan1/P12_HasilModifikasi_Pertanyaan5.png)
+
 ### 6. Modifikasi kode program dengan menambahkan method printReverse() untuk menampilkan seluruh data pada Double Linked List secara terbalik, dimulai dari node tail menuju head!
+
+![Screenshot](img/Percobaan1/P12_HasilModifikasi_Pertanyaan6.png)
