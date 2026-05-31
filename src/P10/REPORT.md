@@ -78,3 +78,9 @@ Method print disitu digunakan untuk mengeprint data ketika front nya tidak berad
 
 ![Screenshot](img/P10_HasilPercobaan2_1.png)
 ![Screenshot](img/P10_HasilPercobaan2_2.png)
+
+## Pertanyaan
+
+### 1. Lakukan modifikasi program dengan menambahkan method baru bernama LihatAkhir pada class AntrianLayanan yang digunakan untuk mengecek antrian yang berada di posisi belakang. Tambahkan pula daftar menu 6. Cek Antrian paling belakang pada class LayananAkademikSIAKAD sehingga method LihatAkhir dapat dipanggil!
+
+![Screenshot](img/P10_Percobaan2_HasilPertanyaan.png)
