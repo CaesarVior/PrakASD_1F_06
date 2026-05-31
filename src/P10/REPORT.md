@@ -57,3 +57,24 @@ Method print disitu digunakan untuk mengeprint data ketika front nya tidak berad
 ## ![Screenshot](img/P10_Pertanyaan7_Enqueue.png)
 
 ## ![Screenshot](img/P10_Pertanyaan7_Dequeue.png)
+
+# Percobaan 2
+
+### Class Mahasiswa06
+
+![Screenshot](img/P10_MahasiswaClass.png)
+
+### Class Mahasiswa06
+
+![Screenshot](img/P10_AntrianLayananClass_1.png)
+![Screenshot](img/P10_AntrianLayananClass_2.png)
+
+### Class Utama (Main)
+
+![Screenshot](img/P10_LayananAkademiSiakadMain_1.png)
+![Screenshot](img/P10_LayananAkademiSiakadMain_2.png)
+
+# Hasil Running
+
+![Screenshot](img/P10_HasilPercobaan2_1.png)
+![Screenshot](img/P10_HasilPercobaan2_2.png)
