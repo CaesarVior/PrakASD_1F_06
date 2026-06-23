@@ -29,3 +29,8 @@ Class ArrayList berbasis array dinamis yang unggul dalam kecepatan mengakses dat
 ![Screenshot](img/Percobaan1/P15_Pertanyaan2_2.png)
 
 Hasilnya adalah seperti pada gambar diatas. Sehingga, ketika data isi dengan tipe data lain tidak bisa
+
+### 3. Ubah kode pada baris kode 38 menjadi seperti ini
+
+![Screenshot](img/Percobaan1/P15_Pertanyaan3.png)
+Hasilnya adalah seperti pada gambar diatas.
