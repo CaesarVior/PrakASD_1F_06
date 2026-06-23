@@ -34,3 +34,14 @@ Hasilnya adalah seperti pada gambar diatas. Sehingga, ketika data isi dengan tip
 
 ![Screenshot](img/Percobaan1/P15_Pertanyaan3.png)
 Hasilnya adalah seperti pada gambar diatas.
+
+### 4. Tambahkan juga baris berikut ini, untuk memberikan perbedaan dari tampilan yang sebelumnya
+
+![Screenshot](img/Percobaan1/P15_Pertanyaan4.png)
+![Screenshot](img/Percobaan1/P15_HasilPercobaan_Pertanyaan4.png)
+
+Hasilnya adalah seperti pada gambar diatas. Sehingga hasilnya akan seperti itu
+
+### 5. Dari penambahan kode tersebut, silakan dijalankan dan apakah yang dapat Anda jelaskan!
+
+Kode program tersebut menunjukkan bagaimana data dalam daftar (list) bisa ditambah, dihapus, diubah nilainya, serta disisipkan di posisi awal secara dinamis, di mana perubahan tersebut langsung memengaruhi urutan, total elemen, dan nilai elemen pertama atau terakhir saat dicetak
