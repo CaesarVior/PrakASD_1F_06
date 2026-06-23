@@ -115,3 +115,17 @@ Konsep: Fungsi tersebut menggunakan konsep Varargs (Variable Arguments) yang dit
 ### 3. Tambahkan fungsi sorting baik secara ascending ataupun descending pada class tersebut!
 
 ![Screenshot](img/Percobaan3/P15_Pertanyaan3.png)
+
+# Tugas
+
+# Hasil Running Pertanyaan 1
+
+![Screenshot](tugas/img/P15_HasilPercobaan_1.png)
+![Screenshot](tugas/img/P15_HasilPercobaan_2.png)
+![Screenshot](tugas/img/P15_HasilPercobaan_3.png)
+![Screenshot](tugas/img/P15_HasilPercobaan_4.png)
+
+# Hasil Running Pertanyaan 2
+
+![Screenshot](tugas/img/P15_HasilPercobaan_Pertanyaan2_1.png)
+![Screenshot](tugas/img/P15_HasilPercobaan_Pertanyaan2_2.png)
