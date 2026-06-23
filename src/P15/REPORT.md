@@ -109,3 +109,9 @@ Program akan mengalami error saat dijalankan karena perintah push(), empty(), da
 Konsep: Fungsi tersebut menggunakan konsep Varargs (Variable Arguments) yang ditandai dengan simbol tiga titik (...). Kelebihan: Kita bisa memasukkan jumlah data mahasiswa secara fleksibel (boleh satu, dua, banyak, atau bahkan kosong) ke dalam fungsi tersebut hanya dengan satu baris panggilan tanpa perlu membuat daftar atau array secara manual terlebih dahulu.
 
 ### 2. Pada fungsi linearSearch() di atas, silakan diganti dengan fungsi binarySearch() dari collection!
+
+![Screenshot](img/Percobaan3/P15_Pertanyaan2.png)
+
+### 3. Tambahkan fungsi sorting baik secara ascending ataupun descending pada class tersebut!
+
+![Screenshot](img/Percobaan3/P15_Pertanyaan3.png)

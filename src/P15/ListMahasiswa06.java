@@ -2,6 +2,8 @@ package P15;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ListMahasiswa06 {
@@ -25,13 +27,34 @@ public class ListMahasiswa06 {
         });
     }
 
-    int linearSearch(String nim) {
-        for (int i = 0; i < mahasiswas.size(); i++) {
-            if (nim.equals(mahasiswas.get(i).nim)) {
-                return i;
+    int binarySearch(String nim) {
+        sortByNimAsc();
+        Mahasiswa06 key = new Mahasiswa06(nim, "", "");
+        
+        return Collections.binarySearch(mahasiswas, key, new Comparator<Mahasiswa06>() {
+            @Override
+            public int compare(Mahasiswa06 m1, Mahasiswa06 m2) {
+                return m1.nim.compareTo(m2.nim);
             }
-        }
-        return -1;
+        });
+    }
+
+    public void sortByNimAsc() {
+        Collections.sort(mahasiswas, new Comparator<Mahasiswa06>() {
+            @Override
+            public int compare(Mahasiswa06 m1, Mahasiswa06 m2) {
+                return m1.nim.compareTo(m2.nim);
+            }
+        });
+    }
+
+    public void sortByNimDesc() {
+        Collections.sort(mahasiswas, new Comparator<Mahasiswa06>() {
+            @Override
+            public int compare(Mahasiswa06 m1, Mahasiswa06 m2) {
+                return m2.nim.compareTo(m1.nim);
+            }
+        });
     }
 
     public static void main(String[] args) {
@@ -43,10 +66,17 @@ public class ListMahasiswa06 {
 
         lm.tambah(m, m1, m2);
         lm.tampil();
-        lm.update(lm.linearSearch("201235"), new Mahasiswa06("201235", "Akhleema Lela", "021xx2"));
+
+        int indexData = lm.binarySearch("201235");
+        if (indexData >= 0) {
+            lm.update(indexData, new Mahasiswa06("201235", "Akhleema Lela", "021xx2"));
+        }
         
-        System.out.println("");
-        
+        System.out.println("\nSetelah Di-update (dan otomatis Ascending):");
+        lm.tampil();
+
+        lm.sortByNimDesc();
+        System.out.println("\nSetelah Di-sort Descending:");
         lm.tampil();
     }
 }
