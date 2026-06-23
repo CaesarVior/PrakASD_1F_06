@@ -98,3 +98,22 @@ Statement int idxLast = 6 berguna untuk membatasi proses pembacaan agar program 
 ### 6. Mengapa indeks 2*idxStart+1 dan 2*idxStart+2 digunakan dalam pemanggilan rekursif, dan apa kaitannya dengan struktur pohon biner yang disusun dalam array?
 
 Indeks rumus tersebut digunakan karena merupakan aturan baku pemetaan pohon biner ke array, di mana anak kiri selalu berada di nomor ganjil dan anak kanan di nomor genap setelah posisi induknya.
+
+# Tugas
+
+### Class BinaryTree
+
+![Screenshot](img/Tugas/Tugas_BinaryTreeClass_1.png)
+![Screenshot](img/Tugas/Tugas_BinaryTreeClass_2.png)
+
+### Class BinaryTreeArray
+
+![Screenshot](img/Tugas/Tugas_BinaryTreeArrayClass.png)
+
+### Class Main
+
+![Screenshot](img/Tugas/Tugas_TugasTreeMain.png)
+
+# Hasil Running
+
+![Screenshot](img/Tugas/Tugas_HasilPercobaan.png)
