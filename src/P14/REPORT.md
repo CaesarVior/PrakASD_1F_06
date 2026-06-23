@@ -75,4 +75,26 @@ Langkah penghapusan dua anak dilakukan dengan mencari node pengganti yang paling
 
 ## Pertanyaan
 
-### 1.
+### 1. Apakah kegunaan dari atribut data dan idxLast yang ada di class BinaryTreeArray?
+
+Atribut dataMahasiswa dan idxLast berguna untuk menyimpan kumpulan objek mahasiswa ke dalam array beserta penanda batas indeks terakhir data yang valid.
+
+### 2. Apakah kegunaan dari method populateData()?
+
+Method populateData() berguna untuk memasukkan atau menyalin sekumpulan data mahasiswa dan batas indeksnya dari program utama ke dalam class tree array.
+
+### 3. Apakah kegunaan dari method traverseInOrder()?
+
+Method traverseInOrder() berguna untuk menjelajahi dan menampilkan informasi data mahasiswa dari pohon biner dengan urutan kiri, induk, lalu kanan.
+
+### 4. Jika suatu node binary tree disimpan dalam array indeks 2, maka di indeks berapakah posisi left child dan right child masing-masing?
+
+Jika induk berada di indeks 2, maka posisi left child ada di indeks 5 dan right child ada di indeks 6.
+
+### 5. Apa kegunaan statement int idxLast = 6 pada praktikum 2 percobaan nomor 4?
+
+Statement int idxLast = 6 berguna untuk membatasi proses pembacaan agar program tahu bahwa data mahasiswa yang valid hanya tersedia sampai indeks ke-6 di dalam array.
+
+### 6. Mengapa indeks 2*idxStart+1 dan 2*idxStart+2 digunakan dalam pemanggilan rekursif, dan apa kaitannya dengan struktur pohon biner yang disusun dalam array?
+
+Indeks rumus tersebut digunakan karena merupakan aturan baku pemetaan pohon biner ke array, di mana anak kiri selalu berada di nomor ganjil dan anak kanan di nomor genap setelah posisi induknya.
