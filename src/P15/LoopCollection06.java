@@ -38,10 +38,22 @@ public class LoopCollection06 {
         });
 
         System.out.println("");
-        
         for (int i = 0; i < fruits.size(); i++) {
             System.out.printf("%s ", fruits.get(i));
         }
         System.out.println();
-    }
+        
+        fruits.add("Mango");
+        fruits.add("guava");
+        fruits.add("avocado");
+
+        java.util.Collections.sort(fruits);
+
+        System.out.println("\nSetelah dilakukan sorting:");
+        for (String fruit : fruits) {
+            System.out.printf("%s ", fruit);
+        }
+        System.out.println();
+        
+    } 
 }

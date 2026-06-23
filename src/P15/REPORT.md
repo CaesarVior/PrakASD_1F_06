@@ -81,3 +81,5 @@ Program akan mengalami error saat dijalankan karena perintah push(), empty(), da
 ### 5. Ganti elemen terakhir dari dari objek fruits menjadi “Strawberry”!
 
 ![Screenshot](img/Percobaan2/P15_Pertanyaan5.png)
+
+### 6. Tambahkan 3 buah seperti “Mango”,”guava”, dan “avocado” kemudian dilakukan sorting!
