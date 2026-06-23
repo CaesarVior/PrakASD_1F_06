@@ -65,4 +65,15 @@ Fungsi push() dan add(): Keduanya sama-sama digunakan untuk memasukkan buah ke d
 ### 2. Silakan hilangkan baris 43 dan 44, apakah yang akan terjadi? Mengapa bisa demikian?
 
 ![Screenshot](img/Percobaan2/P15_Pertanyaan2.png)
+
 Tiga baris terakhir pada keluaran program akan menjadi kosong karena buah "Melon" dan "Durian" tidak jadi dimasukkan ke dalam daftar yang sebelumnya sudah dikosongkan.
+
+### 3. Jelaskan fungsi dari baris 46-49?
+
+Baris tersebut berfungsi untuk menampilkan seluruh isi daftar buah secara berurutan menggunakan alat bantu penjelajah (iterator).
+
+### 4. Silakan ganti baris kode 25, Stack<String> menjadi List<String> dan apakah yang terjadi? Mengapa bisa demikian?
+
+![Screenshot](img/Percobaan2/P15_Pertanyaan4.png)
+
+Program akan mengalami error saat dijalankan karena perintah push(), empty(), dan pop() tidak dikenali di dalam struktur List biasa.

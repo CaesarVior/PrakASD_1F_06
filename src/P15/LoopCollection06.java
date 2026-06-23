@@ -5,13 +5,13 @@ import java.util.Stack;
 
 public class LoopCollection06 {
     public static void main(String[] args) {
-        Stack<String> fruits = new Stack<>();
+        List<String> fruits = new List<>();
         fruits.push("Banana");
         fruits.add("Orange");
         fruits.add("Watermelon");
         fruits.add("Leci");
         fruits.push("Salak");
-
+        
         for (String fruit : fruits) {
             System.out.printf("%s ", fruit);
         }
