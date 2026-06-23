@@ -3,8 +3,14 @@ package Kuis2;
 public class DoubleLinkedList06 {
     NodePembeli06 headPembeli06;
     NodePembeli06 tailPembeli06;
+
     NodePesanan06 headPesanan06;
     NodePesanan06 tailPesanan06;
+
+    NodeRekap06 headRekap06;
+    NodeRekap06 tailRekap06;
+
+ 
     int counterAntrian = 1;
 
     public void tambahAntrian(String nama, String noHp){
@@ -33,7 +39,7 @@ public class DoubleLinkedList06 {
             System.out.println("Antrian Kosong");
         } else {
                 while (current != null) {
-                System.out.println(current.data.noAntrian + "       " + current.data.nama + "       " + current.data.noHp);
+                System.out.println(current.data.noAntrian + "\t\t    " + current.data.nama + "       " + current.data.noHp);
                 current = current.next;
             }
         }
@@ -57,8 +63,10 @@ public class DoubleLinkedList06 {
                     current.next.prev = current.prev;
                 }
             }
+            current = current.next; 
         }
     }
+
 
     public void tambahPesanan(int kode, String namaMenu, int harga){
         Pesanan06 pesanan06 = new Pesanan06(kode, harga, namaMenu);
@@ -72,6 +80,60 @@ public class DoubleLinkedList06 {
             tailPesanan06 = newNode;
         }
     }
+
+    //File Modifikasi: Membuat function masukkan menu rekap
+    public void tambahRekapMenu(String namaMenu, int jumlah){
+        Rekap06 rekap06 = new Rekap06(jumlah, namaMenu);
+        NodeRekap06 newNode = new NodeRekap06(rekap06);
+
+        if (headRekap06 == null) {
+            headRekap06 = tailRekap06 = newNode;
+        } else {
+            tailRekap06.next = newNode;
+            newNode.prev = tailRekap06;
+            tailRekap06 = newNode;
+        }
+    }
+
+    //File Modifikasi: Membuat function rekap
+    public void laporanRekap(){
+        System.out.println("=========================================");
+        System.out.println("LAPORAN REKAP PESANAN (URUT NAMA PESANAN)");
+        System.out.println("=========================================");
+        System.out.println("Jumlah         Nama Pesanan");
+
+        if (headRekap06 == null) {
+            System.out.println("Belum ada pesanan masuk");
+        } else {
+            int size = 0;
+            NodeRekap06 temp = headRekap06;
+            while (temp != null) {
+                size++;
+                temp = temp.next;
+            }
+
+            NodeRekap06[] array = new NodeRekap06[size];
+            temp = headRekap06;
+            for (int i = 0; i < size; i++) {
+                array[i] = temp;
+                temp = temp.next;
+
+            }
+
+            for (int i = 0; i < size - 1; i++) {
+                for (int j = 0; j < size - i - 1; j++) {
+                    if (array[j].data.namaPesanan.compareToIgnoreCase(array[j + 1].data.namaPesanan) == array[j].data.namaPesanan.compareToIgnoreCase(array[j + 1].data.namaPesanan)) {
+                        Rekap06 t =array[j].data;
+                        
+                    }
+                }
+            }
+            for (int i = 0; i < size; i++) {
+                System.out.println(array[i].data.jumlah + "       " + array[i].data.namaPesanan );
+            }
+        }     
+    }
+    
 
     public void laporanPesanan(){
         System.out.println("=========================================");
@@ -108,6 +170,6 @@ public class DoubleLinkedList06 {
             for (int i = 0; i < size; i++) {
                 System.out.println(arr[i].data.kodePesanan + "       " + arr[i].data.namaPesanan + "       " + arr[i].data.harga);
             }
-        }
+        }     
     }
 }
