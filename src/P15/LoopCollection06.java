@@ -5,25 +5,25 @@ import java.util.Stack;
 
 public class LoopCollection06 {
     public static void main(String[] args) {
-        List<String> fruits = new List<>();
+        Stack<String> fruits = new Stack<>();
         fruits.push("Banana");
         fruits.add("Orange");
         fruits.add("Watermelon");
         fruits.add("Leci");
         fruits.push("Salak");
-        
+
         for (String fruit : fruits) {
             System.out.printf("%s ", fruit);
         }
 
         System.out.println("\n" + fruits.toString());
-
+        fruits.set(fruits.size() - 1, "Strawberry");
         while (!fruits.empty()) {
             System.out.printf("%s ", fruits.pop());
         }
 
-        // fruits.push("Melon");
-        // fruits.push("Durian");
+        fruits.push("Melon");
+        fruits.push("Durian");
         System.out.println("");
 
         for (Iterator<String> it = fruits.iterator(); it.hasNext();) {

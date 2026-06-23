@@ -77,3 +77,7 @@ Baris tersebut berfungsi untuk menampilkan seluruh isi daftar buah secara beruru
 ![Screenshot](img/Percobaan2/P15_Pertanyaan4.png)
 
 Program akan mengalami error saat dijalankan karena perintah push(), empty(), dan pop() tidak dikenali di dalam struktur List biasa.
+
+### 5. Ganti elemen terakhir dari dari objek fruits menjadi “Strawberry”!
+
+![Screenshot](img/Percobaan2/P15_Pertanyaan5.png)
