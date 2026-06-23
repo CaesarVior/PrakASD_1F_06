@@ -83,3 +83,29 @@ Program akan mengalami error saat dijalankan karena perintah push(), empty(), da
 ![Screenshot](img/Percobaan2/P15_Pertanyaan5.png)
 
 ### 6. Tambahkan 3 buah seperti “Mango”,”guava”, dan “avocado” kemudian dilakukan sorting!
+
+# Percobaan 3
+
+### Class Mahasiswa
+
+![Screenshot](img/Percobaan3/P15_ListMahasiswaClass.png)
+
+### Class ListMahasiswa
+
+![Screenshot](img/Percobaan3/P15_ListMahasiswaClass.png)
+
+### Class Utama
+
+![Screenshot](img/Percobaan3/P15_ListMahasiswaMain.png)
+
+# Hasil Running
+
+![Screenshot](img/Percobaan3/P15_HasilPercobaan.png)
+
+## Pertanyaan
+
+### 1. Pada fungsi tambah() yang menggunakan unlimited argument itu menggunakan konsep apa? Dan kelebihannya apa?
+
+Konsep: Fungsi tersebut menggunakan konsep Varargs (Variable Arguments) yang ditandai dengan simbol tiga titik (...). Kelebihan: Kita bisa memasukkan jumlah data mahasiswa secara fleksibel (boleh satu, dua, banyak, atau bahkan kosong) ke dalam fungsi tersebut hanya dengan satu baris panggilan tanpa perlu membuat daftar atau array secara manual terlebih dahulu.
+
+### 2. Pada fungsi linearSearch() di atas, silakan diganti dengan fungsi binarySearch() dari collection!
