@@ -11,6 +11,7 @@ public class BinaryTree06 {
         return root == null;
     }
 
+    // Menambahkan data mahasiswa baru ke dalam tree
     public void add(Mahasiswa06 mahasiswa) {
         Node06 newNode = new Node06(mahasiswa);
         if (isEmpty()) {
@@ -37,6 +38,7 @@ public class BinaryTree06 {
         }
     }
 
+    // Mencari apakah ada mahasiswa yang memiliki nilai IPK tertentu di dalam tree
     public boolean find(double ipk) {
         boolean result = false;
         Node06 current = root;
@@ -53,6 +55,7 @@ public class BinaryTree06 {
         return result;
     }
 
+    // Menampilkan data mahasiswa dengan urutan Pre-Order (Cetak node saat ini -> Telusuri anak kiri -> Telusuri anak kanan).
     public void traversePreOrder(Node06 node) {
         if (node != null) {
             node.mahasiswa.tampilInformasi();
@@ -61,6 +64,7 @@ public class BinaryTree06 {
         }
     }
 
+    // Menampilkan data mahasiswa dengan urutan In-Order (Telusuri anak kiri -> Cetak node saat ini -> Telusuri anak kanan) | IPK terkecil ke terbesar.
     public void traverseInOrder(Node06 node) {
         if (node != null) {
             traverseInOrder(node.left);
@@ -69,6 +73,7 @@ public class BinaryTree06 {
         }
     }
 
+    // Menampilkan data mahasiswa dengan urutan Post-Order (Telusuri anak kiri -> Telusuri anak kanan -> Cetak node saat ini)
     public void traversePostOrder(Node06 node) {
         if (node != null) {
             traversePostOrder(node.left);
@@ -77,6 +82,7 @@ public class BinaryTree06 {
         }
     }
 
+    // Mencari node pengganti (successor) jika node yang ingin dihapus memiliki 2 anak
     public Node06 getSuccessor(Node06 del) {
         Node06 successor = del.right;
         Node06 successorParent = del;
@@ -91,6 +97,7 @@ public class BinaryTree06 {
         return successor;
     }
 
+    // Menghapus node mahasiswa berdasarkan nilai IPK-nya
     public void delete(double ipk) {
         if (isEmpty()) {
             System.out.println("Binary tree kosong");
@@ -170,7 +177,7 @@ public class BinaryTree06 {
         root = addRekursif(root, mahasiswa);
     }
 
-    
+    // Menambahkan data mahasiswa baru ke dalam tree, namun menggunakan metode rekursif
     private Node06 addRekursif(Node06 current, Mahasiswa06 mahasiswa) {
         if (current == null) {
             return new Node06(mahasiswa);
@@ -183,6 +190,7 @@ public class BinaryTree06 {
         return current;
     }
 
+    // Mencari dan menampilkan data mahasiswa dengan IPK terkecil 
     public void cariMinIPK() {
         if (isEmpty()) {
             System.out.println("Binary tree kosong");
@@ -196,6 +204,7 @@ public class BinaryTree06 {
         current.mahasiswa.tampilInformasi();
     }
 
+    // Mencari dan menampilkan data mahasiswa dengan IPK terbesar
     public void cariMaxIPK() {
         if (isEmpty()) {
             System.out.println("Binary tree kosong");
@@ -214,6 +223,7 @@ public class BinaryTree06 {
         tampilMahasiswaIPKdiAtas(root, ipkBatas);
     }
 
+    // Menampilkan daftar semua mahasiswa yang memiliki nilai IPK lebih besar dari batasan angka (ipkBatas)
     private void tampilMahasiswaIPKdiAtas(Node06 node, double ipkBatas) {
         if (node != null) {
             tampilMahasiswaIPKdiAtas(node.left, ipkBatas);

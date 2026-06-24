@@ -9,11 +9,13 @@ public class BinaryTreeArray06 {
         this.idxLast = -1;
     }
 
+    // memasukkan data array
     void populateData(Mahasiswa06 dataMhs[], int idxLast) {
         this.dataMahasiswa = dataMhs;
         this.idxLast = idxLast;
     }
 
+    // menambahkan (insert) data mahasiswa baru ke dalam array tree
     void add(Mahasiswa06 data) {
         if (idxLast < dataMahasiswa.length - 1) {
             idxLast++;
@@ -23,6 +25,7 @@ public class BinaryTreeArray06 {
         }
     }
 
+    // melakukan penelusuran (traversal) pohon secara In-Order (Left-Root-Right)
     void traverseInOrder(int idxStart) {
         if (idxStart <= idxLast) {
             if (dataMahasiswa[idxStart] != null) {
@@ -33,10 +36,12 @@ public class BinaryTreeArray06 {
         }
     }
 
+    // method pembuka (helper/overload) untuk memulai proses penelusuran secara Pre-Order
     void traversePreOrder() {
         traversePreOrder(0);
     }
 
+    // Untuk melakukan penelusuran (traversal) pohon secara Pre-Order (Root-Left-Right)
     void traversePreOrder(int idxStart) {
         if (idxStart <= idxLast) {
             if (dataMahasiswa[idxStart] != null) {
